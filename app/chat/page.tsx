@@ -1,4 +1,4 @@
-import ChatBox from '/chatBox';
+import ChatBox from './chatBox';
 
 export default function ChatPage() {
   return <ChatBox />;
