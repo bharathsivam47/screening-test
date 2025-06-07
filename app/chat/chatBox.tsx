@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { ChatMessage } from '@/types/message'; // Make sure the path is correct
+// Make sure the path is correct
 
 export default function ChatBox() {
   const [messages, setMessages] = useState<string[]>([]);
