@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Summary.module.css';
+import styles from './summary.module.css';
 
 const SummaryPage = () => {
   return (
