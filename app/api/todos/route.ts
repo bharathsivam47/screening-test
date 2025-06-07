@@ -1,4 +1,3 @@
-// app/api/todos/route.ts
 import { NextRequest, NextResponse } from 'next/server';
 
 interface Todo {
@@ -8,7 +7,7 @@ interface Todo {
 }
 
 // In-memory store (use a database in production)
-let todos: Todo[] = [
+const todos: Todo[] = [
   { id: 1, title: 'Learn Next.js', completed: false },
   { id: 2, title: 'Build a To-Do API', completed: false },
   { id: 3, title: 'Write code', completed: false },
@@ -40,6 +39,7 @@ export async function POST(req: NextRequest) {
     todos.push(newTodo);
     return NextResponse.json(newTodo, { status: 201 });
   } catch (error) {
+    console.error('Error creating todo:', error); // ✅ Now error is used
     return NextResponse.json(
       { error: 'Failed to create todo.' },
       { status: 500 }
