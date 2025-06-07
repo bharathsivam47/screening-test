@@ -1,4 +1,4 @@
-import ChatBox from 'app/components/chatBox';
+import ChatBox from '/chatBox';
 
 export default function ChatPage() {
   return <ChatBox />;
