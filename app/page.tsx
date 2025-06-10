@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.container}>
-        <h1 className={styles.title}>🚀 Welcome to Intern Screening Test</h1>
+        <h1 className={styles.title}>🚀 Welcome to Full & AI Integration</h1>
         <p className={styles.subtitle}>Explore your modern full-stack features below.</p>
 
         <div className={styles.buttonGroup}>
@@ -16,9 +16,13 @@ export default function Home() {
           <Link href="/notesync" className={styles.button} style={{ color: "#7C3AED" }}>
             🔄 Node Sync View
           </Link>
-
+         
+          <Link href="/chatbox" className={styles.button} style={{ color: "#16A34A" }}>
+             🤖 AI Chat Assistant
+          </Link>
+          
           <Link href="/summary" className={styles.button} style={{ color: "#DB2777" }}>
-            📄 Question and answer
+            📄 Q/A & Past Project Link
           </Link>
         </div>
 
